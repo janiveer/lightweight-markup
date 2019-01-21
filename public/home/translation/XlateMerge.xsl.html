@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XlateMerge.xsl :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/translation/XlateMerge.xsl.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">Translation Stylesheets</li>
+    <li class="crumb"><a href="XlateMerge.xsl.html">XlateMerge</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/translation/pages/XlateMerge.xsl.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>XlateMerge.xsl</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<blockquote>
+Checks an XML document against an existing translation and a
+differential translation in the specified language and generates a new XLIFF
+file merging the two translations.
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="parameters"><a class="anchor" href="#parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>(Language | Xliff) Diff</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>Language</code> (string)</dt>
+<dd>
+<p>ISO language code,</p>
+</dd>
+<dt class="hdlist1"><code>Xliff</code> (URI)</dt>
+<dd>
+<p>The URI of the original
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file</p>
+</dd>
+<dt class="hdlist1"><code>Diff</code> (URI)</dt>
+<dd>
+<p>The URI of the differential
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="input"><a class="anchor" href="#input"></a>Input</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An XML document. You must mark up the source document with:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The xlf:id attributes which uniquely identify each translation
+string.</p>
+</li>
+<li>
+<p>Optionally, <a href="#RDF-Translations">translation metadata</a>, showing
+the location of the
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> files
+which contain the translations of the document — this is only required
+if you are not specifying the <code>Xliff</code> parameter explicitly.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="output"><a class="anchor" href="#output"></a>Output</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An <a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a>
+document.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="description"><a class="anchor" href="#description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The stylesheet examines the source file for translatable elements. (A
+translatable element is one which has an xlf:id attribute and does not
+have the its:translate='no' attribute.)</p>
+</div>
+<div class="paragraph">
+<p>For each translatable element, the stylesheet searches the differential
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file for
+the translation unit with the same xlf:id. If found, and if the target
+of the translation unit has the attribute status='translated', this
+translation unit is copied to the output.</p>
+</div>
+<div class="paragraph">
+<p>If the translation unit is not found in the differential
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file,
+the stylesheet looks for the specified original
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file, or
+if not specified, the
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file
+that corresponds to the specified output language, according to the
+<a href="#RDF-Translations">translation metadata</a>.</p>
+</div>
+<div class="paragraph">
+<p>If the original
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file is
+found, the stylesheet searches for the translation unit with the same
+xlf:id. If found, this translation unit is copied to the output.</p>
+</div>
+<div class="paragraph">
+<p>If the corresponding translation unit does not exist in the differential
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file or
+the original
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file,
+there is no output.</p>
+</div>
+<div class="paragraph">
+<p>If the original
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file is
+not found, there is no output.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In the output file, all trans-unit elements are contained in a single,
+flat file element. Any multiple file or group elements from the original
+or differential
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> files
+are not copied to the output file.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

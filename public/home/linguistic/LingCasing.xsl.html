@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingCasing.xsl :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/linguistic/LingCasing.xsl.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">Linguistic Stylesheets</li>
+    <li class="crumb"><a href="LingCasing.xsl.html">LingCasing</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/linguistic/pages/LingCasing.xsl.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>LingCasing.xsl</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<blockquote>
+Sets the orthographic case of specified text in an XML document.
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="parameters"><a class="anchor" href="#parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>[ShortWords]</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>ShortWords</code> (string)</dt>
+<dd>
+<p>English words which should not be capitalised
+in title case.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="input"><a class="anchor" href="#input"></a>Input</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An XML document. You must mark up the source document with linguistic
+attributes describing the orthographic case which is required for the
+specified text — see description below.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="output"><a class="anchor" href="#output"></a>Output</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An XML document, identical to the input except that marked text is set
+to the required orthographic case.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="description"><a class="anchor" href="#description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The stylesheet recurses through the document and copies each element. If
+any element has the ling:orth attribute, the stylesheet changes the case
+of the text nodes in this element and all descendent elements.</p>
+</div>
+<div class="paragraph">
+<p>This is useful for transclusion. If you transclude a term at the start
+of a sentence, you may want to set the case of the transcluded term to
+sentence case. If you transclude a term into a title, you may want to
+set the case of the transcluded term to title case.</p>
+</div>
+<div class="paragraph">
+<p>This stylesheet is only relevant to languages which use orthographic
+case. The stylesheet supports all alphabets supported by the
+<a href="http://xsltsl.sourceforge.net/">XSL Standard Library</a> string stylesheets,
+including Latin, Greek and Cyrillic.</p>
+</div>
+<div class="paragraph">
+<p>The namespace URI for the linguistic attributes is
+<a href="http://stanleysecurity.github.io/PACBook/ns/linguistics" class="bare">http://stanleysecurity.github.io/PACBook/ns/linguistics</a>.</p>
+</div>
+<div class="paragraph">
+<p>The ling:orth attribute may have any of the following values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>upper</p>
+</li>
+<li>
+<p>lower</p>
+</li>
+<li>
+<p>sentence</p>
+</li>
+<li>
+<p>title</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="upper"><a class="anchor" href="#upper"></a>Upper</h3>
+<div class="paragraph">
+<p>Changes the case of text nodes to upper case. This is applied to text in
+the current element and all descendent elements, unless any descendent
+elements have a different ling:orth attribute.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lower"><a class="anchor" href="#lower"></a>Lower</h3>
+<div class="paragraph">
+<p>Changes the case of text nodes to lower case. This is applied to text in
+the current element and all descendent elements, unless any descendent
+elements have a different ling:orth attribute.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sentence"><a class="anchor" href="#sentence"></a>Sentence</h3>
+<div class="paragraph">
+<p>Finds the first text node child of the current element and changes the
+first character of the word to upper case. The rest of the text nodes in
+this element and all descendent elements are left unchanged, unless any
+descendent elements have a different ling:orth attribute.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="title"><a class="anchor" href="#title"></a>Title</h3>
+<div class="paragraph">
+<p>Splits the text into words (at spaces). If a word is <em>not</em> listed in the
+<code>ShortWords</code> parameter, changes the first character of the word to upper
+case. This is applied to text nodes in the current element and all
+descendent elements, unless any descendent elements have a different
+ling:orth attribute.</p>
+</div>
+<div class="paragraph">
+<p>Title case only supports English. For other languages, use sentence
+case. The default value of the <code>ShortWords</code> parameter is hard coded into
+the stylesheet.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

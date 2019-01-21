@@ -1,0 +1,52 @@
+= XL2Xliff.xsl
+
+[abstract]
+Imports from a Microsoft Excel 2003 XML workbook to an XLIFF file.
+
+== Parameters
+
+None.
+
+Input
+-----
+
+A Microsoft Excel 2003 XML workbook.
+
+Output
+------
+
+An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file.
+
+Description
+-----------
+
+The stylesheet exports the content of a Microsoft Excel 2003 XML
+workbook to an
+http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file.
+
+The workbook’s Source custom property is exported as the
+http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file’s
+original attribute. The Language custom property is exported as the
+http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file’s
+source-language attribute. The Destination custom property is exported
+as the http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
+file’s target-language attribute.
+
+The Title, Subject and Version properties of the workbook are exported
+to the note element within the
+http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file’s
+header element.
+
+The spreadsheet to be exported must be titled `Xlate`. Every other
+spreadsheet in the workbook is ignored.
+
+Within the exported spreadsheet, each row is exported to a single
+translation unit. The first row in the spreadsheet is assumed to be a
+header row and is ignored.
+
+In each row, the content of the first column is exported as the ID
+attribute of the translation unit. The content of the second column is
+exported as the content of the source element. The content of the third
+column is exported as the content of the target element. The content of
+the fourth column, if any, is exported as the content of the note
+element. All other content is ignored.

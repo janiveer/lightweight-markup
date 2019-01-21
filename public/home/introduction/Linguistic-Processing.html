@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguistic Processing :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/introduction/Linguistic-Processing.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">Concepts</li>
+    <li class="crumb"><a href="Linguistic-Processing.html">Linguistic Processing</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/introduction/pages/Linguistic-Processing.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Linguistic Processing</h1>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Intro"><a class="anchor" href="#Linguistic-Processing-Intro"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Transclusion can be divided into large scale,
+<a href="http://en.wikipedia.org/wiki/Transclusion#Context_neutrality">context-free
+transclusion</a> and small scale,
+<a href="http://en.wikipedia.org/wiki/Transclusion#Parameterization">parametrised
+transclusion</a>. For example, in DocBook, using an assembly to include
+chapters or sections in a book is large scale and context-free.
+Inserting a product name at multiple locations in the document is small
+scale, parametrised transclusion. Small snippets of text might be
+transcluded in several ways: via entities,
+<a href="http://www.w3.org/TR/xinclude/">XInclude</a> elements, or using the PACBook
+<a href="../transclusion/TransParam.xsl.html" class="page">TransParam.xsl</a> stylesheet.</p>
+</div>
+<div class="paragraph">
+<p>All the examples on this page assume you are using the PACBook
+<a href="../transclusion/TransParam.xsl.html" class="page">TransParam.xsl</a> stylesheet and are marked up
+accordingly; you could almost as easily use entities or XInclude
+instead, but the markup would be different.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s sometimes desirable that the content of the transcluded term should
+vary in some way. Perhaps a different brand name is used for different
+markets; or perhaps a generic document is used for lots of different
+products, and you want to include the correct product name in each
+version of the document.</p>
+</div>
+<div class="paragraph">
+<p>There are several different methods that you could use to vary the
+content of the transcluded term. One is by local redefinition of the
+transclusion text. This is implemented by the PACBook
+<a href="../transclusion/TransParam.xsl.html" class="page">TransParam.xsl</a> stylesheet. Another is by combining
+transclusion and conditional processing. For example, using the PACBook
+markup, you could create a transclusion resource called Product_Name
+containing the possible product names, like so:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;resource xl:label="Product_Name"&gt;
+  &lt;phrase vendor="ACME"&gt;Euro 500&lt;/phrase&gt;
+  &lt;phrase vendor="Yoyodyne"&gt;Oz 500&lt;/phrase&gt;
+&lt;/resource&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You would then use the <a href="../transclusion/TransParam.xsl.html" class="page">TransParam.xsl</a> stylesheet
+to transclude the conditional phrases wherever the product name was
+required:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Installing &lt;phrase content:ref="Product_Name"/&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Parametrised transclusion gives:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Installing &lt;phrase&gt;
+  &lt;phrase vendor="ACME"&gt;Euro 500&lt;/phrase&gt;
+  &lt;phrase vendor="Yoyodyne"&gt;Oz 500&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You would then use conditional processing, e.g. with the DocBook XSL
+parameter <code>profile.vendor</code>, to select the correct product name for the
+required vendor.</p>
+</div>
+<div class="paragraph">
+<p>Small scale, parametrised transclusion can have linguistic consequences.
+These problems can often be avoided by careful wording and translation.
+In some circumstances, though, they may be unavoidable.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Problem-1"><a class="anchor" href="#Linguistic-Processing-Problem-1"></a>Problem 1: Inflecting Dependent Words</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If the transcluded word or phrase is the
+<a href="https://en.wikipedia.org/wiki/Head_(linguistics)">head</a> of a noun phrase,
+further changes may be required in
+<a href="https://en.wikipedia.org/wiki/Dependent_(grammar)">dependent</a> words. To
+take an obvious example from English:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Configuring a &lt;phrase content:ref="Product_Name"/&gt; Server&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Parametrised transclusion and profiling for the ACME vendor gives:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Configuring a &lt;phrase&gt;
+  &lt;phrase vendor="ACME"&gt;Euro 500&lt;/phrase&gt;
+&lt;/phrase&gt; Server&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>… which is correct. However, profiling for the Yoyodyne vendor gives:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Configuring a &lt;phrase&gt;
+  &lt;phrase vendor="Yoyodyne"&gt;Oz 500&lt;/phrase&gt;
+&lt;/phrase&gt; Server&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>… which is incorrect. The word <em>a</em> should be <em>an</em>.</p>
+</div>
+<div class="paragraph">
+<p>In languages other than English, dependent words can also vary according
+to the syntactic environment. For example, a document may use
+conditional processing to select the term <em>PC</em>, <em>tablet</em> or <em>phone</em>,
+depending on the operating system or architecture for which the document
+is published. The terms <em>PC</em>, <em>tablet</em> and <em>phone</em> may have different
+genders in other languages, so dependent articles and adjectives will
+also have to change in agreement with the selected term.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Problem-2"><a class="anchor" href="#Linguistic-Processing-Problem-2"></a>Problem 2: Declining the Head Word</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In many languages other than English, the form of the transcluded
+snippet itself might vary, depending on the role of the term in the
+sentence. (This usually only applies if the transcluded text is a common
+noun, rather than a brand name.) For instance, in Swedish a definite
+term might need to take a different form to an indefinite term, e.g.
+<em>organisationsenheten</em> "the organisational unit", <em>organisationsenhet</em>
+"organisational unit". In German, a genitive or dative term might take
+a different form to the usual nominative form, e.g. <em>Schlüsselinhaber</em>
+"keyholders" (nominative), <em>Schlüsselinhabern</em> "keyholders"
+(dative).</p>
+</div>
+<div class="paragraph">
+<p>It is tempting for the author to attempt to work around this simply by
+including the word endings in the document outside of the transcluded
+text. This is inadvisable, as some terms may require different endings:
+for example in Swedish, neuter nouns have a different definite ending to
+common nouns. Also, some words may have internal changes as well as
+different endings, e.g. umlaut in German.</p>
+</div>
+<div class="paragraph">
+<p>This problem is acknowledged, in the context of translations, in the
+<a href="https://jfearn.fedorapeople.org/en-US/Publican/4.0/html/Users_Guide/chap-Publican-Users_Guide-Creating_a_document.html#sect-Publican-Users_Guide-Entities_and_translation">Publican
+documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Principles"><a class="anchor" href="#Linguistic-Processing-Principles"></a>Principles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PACBook uses the following mechanism to select the correct form of a
+transcluded head word and any dependent words:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The author and / or translator(s) must use the linguistic markup
+scheme described below. To decline a transcluded head word, you must
+mark up the different forms of the word to be transcluded <em>and</em> mark up
+which form is required at every location where the term is to be
+transcluded. To inflect any dependent words, you need to mark up any
+linguistic features of the transcluded term which affect dependent words
+<em>and</em> mark up the dependent words in the document.</p>
+</li>
+<li>
+<p>Linguistic pre-processing is broken down into several small steps: (1)
+performing parametrised transclusion; (2) selecting the correct form of
+head words; (3) conditional profiling; and (4) selecting the correct
+form of dependent words from a syntactic dictionary. The document is
+then passed on to the next step in the publication toolchain.</p>
+</li>
+<li>
+<p>As pre-processing is not accomplished in a single step, it is
+necessary to use some kind of build script or
+<a href="http://www.w3.org/TR/xproc/">XProc</a> pipeline to automate the publication
+process.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Markup"><a class="anchor" href="#Linguistic-Processing-Markup"></a>Linguistic Markup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PACBook linguistic markup consists of the following XML attributes. It
+may be necessary to customise or extend the markup schema of the
+document to include these attributes. These attributes are defined as
+name tokens (NMTOKEN); the possible values are not enumerated.</p>
+</div>
+<div class="paragraph">
+<p>The PACBook extension, which adds these attributes to the DocBook 5.0
+schema, is described in xrex:PACBook-Schema.adoc[PACBook schema].</p>
+</div>
+<div class="paragraph">
+<p>Linguistic attributes must be applied to a wrapper element. If no
+suitable in-line element is available, a generic element such as DocBook
+phrase, DITA ph or Mallard span can be used.</p>
+</div>
+<div class="paragraph">
+<p>The namespace URI for the linguistic attributes is
+<a href="http://stanleysecurity.github.io/PACBook/ns/linguistics" class="bare">http://stanleysecurity.github.io/PACBook/ns/linguistics</a>.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">ling:type</dt>
+<dd>
+<p>Has two possible values: head is used to mark the possible forms of a
+head word; depend is used to mark a dependent word.</p>
+</dd>
+<dt class="hdlist1">ling:pron</dt>
+<dd>
+<p>Indicates the pronunciation or phonetic environment that the head word
+governs. This is not the full pronunciation of the word. For most
+languages that require this feature, ling:pron='V' indicates that the
+word is pronounced with an initial vowel; ling:pron='C' that the word
+is pronounced with an initial consonant. The value of the attribute
+can be tailored to the language. So for Italian, ling:pron='S'
+indicates that the word is pronounced with an initial "s" cluster,
+"gn", "ps", "x" or "z". For Spanish, ling:pron='A' indicates
+that the word has an initial stressed "a".</p>
+</dd>
+<dt class="hdlist1">ling:num</dt>
+<dd>
+<p>Indicates grammatical number. Possible values are sg singular, pl
+plural, etc.</p>
+</dd>
+<dt class="hdlist1">ling:case</dt>
+<dd>
+<p>Indicates grammatical case. May have any string value, as long as it
+matches a value used to mark case in the PACBook syntactic dictionary
+for the current language. In the PACBook syntactic dictionaries, the
+values used are: nom nominative, gen genitive, dat dative, acc
+accusative. You can use the gen case to mark the possessive in
+English.</p>
+</dd>
+<dt class="hdlist1">ling:gen</dt>
+<dd>
+<p>Indicates grammatical gender. Possible values are c common, m
+masculine, f feminine, n neutral, etc.</p>
+</dd>
+<dt class="hdlist1">ling:class</dt>
+<dd>
+<p>Indicates the inflection class. May have any string value, as long as
+it matches a value used to mark inflectional class in the PACBook
+syntactic dictionary for the current language. In the PACBook
+syntactic dictionaries, the values used in German are strong, weak and
+mixed; the values used in Dutch, Swedish and Norwegian are ind for
+indefinite, def for definite.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Because the spelling of a word doesn&#8217;t necessarily indicate its
+pronunciation. For example, in English the word <em>Europe</em> is written with
+an initial vowel but pronounced with an initial consonant, i.e. a "y"
+sound. An acronym like XML is written with an initial consonant but
+pronounced with an initial vowel, i.e. "ex em el".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Head"><a class="anchor" href="#Linguistic-Processing-Head"></a>Head Markup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you define a transclusion resource containing a head word, you must
+also mark attributes on the head word to indicate any linguistic
+features which demand agreement from dependent words. The head word must
+be wrapped in a suitable spanning element.</p>
+</div>
+<div class="paragraph">
+<p>The linguistic features which demand agreement vary from language to
+language. In English, the only one you have to worry about is the
+pronunciation of the head word.</p>
+</div>
+<div class="paragraph">
+<p>This example in English shows the pronunciation of the transcluded
+terms:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;resource xl:label="Product_Name"&gt;
+  &lt;phrase vendor="ACME" ling:pron="C"&gt;Euro 500&lt;/phrase&gt;
+  &lt;phrase vendor="Yoyodyne" ling:pron="V"&gt;Oz 500&lt;/phrase&gt;
+&lt;/resource&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Depend"><a class="anchor" href="#Linguistic-Processing-Depend"></a>Dependent Markup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A dependent word should have the ling:type='depend' attribute to
+indicate that it is a dependent word. Again, this linguistic attribute
+must be applied to a wrapper element.</p>
+</div>
+<div class="paragraph">
+<p>The content of this element must consist only of text. This text is used
+to look up the correct inflected form of the word in the dictionary.</p>
+</div>
+<div class="paragraph">
+<p>Other linguistic attributes, e.g. ling:class, can be applied to this
+element if required.</p>
+</div>
+<div class="paragraph">
+<p>The words which you must mark up as dependent words vary from language
+to language. In English, the only one you have to worry about is the
+indefinite article <em>a</em>.</p>
+</div>
+<div class="paragraph">
+<p>This example in English shows that the word <em>a</em> is a dependent word:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Configuring &lt;wordasword ling:type="depend"&gt;a&lt;/wordasword&gt;
+&lt;phrase content:ref="Product_Name"/&gt; Server&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In sentences containing multiple head words, you must surround each head
+word and all its dependent words with another, semantically empty
+wrapper element, so that the stylesheet knows which words depend on
+which head. (This is not necessary with dependent words which vary only
+in relation to the phonetic environment; they always look for the
+nearest phonetic markup.)</p>
+</div>
+<div class="paragraph">
+<p>This example in German shows that the word <em>ein</em> is dependent on the
+first instance of the transcluded term, and the word <em>der</em> is dependent
+on the second instance, which takes the genitive case:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Wenn &lt;phrase&gt;&lt;wordasword ling:type="depend"&gt;ein&lt;/wordasword&gt;
+&lt;phrase content:ref="Device"/&gt;&lt;/phrase&gt; konfiguriert wird,
+werden die Details &lt;phrase&gt;&lt;wordasword ling:type="depend"&gt;der&lt;/wordasword&gt;
+&lt;phrase content:ref="Device" ling:case="gen"/&gt;&lt;/phrase&gt; auf der Weboberfläche
+angezeigt.&lt;/para&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Definitions"><a class="anchor" href="#Linguistic-Processing-Definitions"></a>Declension Markup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If the head noun is declinable, you must include in the transclusion
+resource all the possible forms of the noun in the current language.
+Again, each form must be wrapped in a suitable spanning element. Each
+form should have the ling:type='head' attribute to indicate that it is a
+form of the head noun, and should also have ling:case and ling:class
+attributes to specify the case and / or definiteness of each form,
+depending on the language.</p>
+</div>
+<div class="paragraph">
+<p>This transclusion resource in Swedish specifies all the forms of the
+term "organisational unit":</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;resource xl:label="Organisational_Unit"&gt;
+  &lt;phrase ling:gen="c" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="nom" ling:class="ind"&gt;organisationsenhet&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="gen" ling:class="ind"&gt;organisationsenhets&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="nom" ling:class="def"&gt;organisationsenheten&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="gen" ling:class="def"&gt;organisationsenhetens&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/resource&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that for convenience the complete declension is wrapped again in an
+element which marks the gender and number. These are required for
+inflecting any dependent words.</p>
+</div>
+<div class="paragraph">
+<p>It is currently assumed that you will define separate transclusion
+resources for the singular and plural forms of a word.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-References"><a class="anchor" href="#Linguistic-Processing-References"></a>Specifying the Required Form</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>At each location where a declinable term is to be transcluded, you must
+mark up the case and / or definiteness you require for this instance of
+the term, depending on the current language. This may require that you
+use another spanning element to wrap the location where the term is to
+be transcluded.</p>
+</div>
+<div class="paragraph">
+<p>This example in Swedish specifies that the transcluded term must be
+definite:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Om nödvändigt, välj &lt;phrase content:ref="Organisational_Unit" ling:class="def"/&gt;.&lt;/para&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Dictionary"><a class="anchor" href="#Linguistic-Processing-Dictionary"></a>Dictionary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The syntactic dictionaries are XML dictionaries using a schema which
+complies with the dictionary module of the <a href="http://www.tei-c.org/">Text
+Encoding Initiative</a> (TEI). The dictionaries are primarily designed to
+handle words in closed semantic categories, e.g. definite and indefinite
+articles, demonstrative adjectives.</p>
+</div>
+<div class="paragraph">
+<p>The dictionaries also contain common contractions, such as German <em>im</em>,
+<em>vom</em>, <em>beim</em>, or French <em>des</em>, <em>aux</em>.</p>
+</div>
+<div class="paragraph">
+<p>Words in open semantic categories pose more of a problem. The
+dictionaries do not yet contain very many adjectives. It would be
+possible, but time consuming, to build comprehensive dictionaries by
+hand. Ideally this process could be automated by taking information from
+on-line dictionaries such as <a href="https://en.wiktionary.org">Wiktionary</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Stylesheets"><a class="anchor" href="#Linguistic-Processing-Stylesheets"></a>Stylesheets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="../linguistic/LingHead.xsl.html" class="page">LingHead.xsl</a> stylesheet enables you to select
+the required declension of head nouns in an XML document, according to
+the case and / or definiteness required in the target sentence.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="../linguistic/LingDepend.xsl.html" class="page">LingDepend.xsl</a> stylesheet enables you to
+inflect dependent words in an XML document, e.g. determiners,
+adjectives, and relative pronouns, according to the syntactic and / or
+phonetic environment for each dependent word.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Examples"><a class="anchor" href="#Linguistic-Processing-Examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Original</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Pour configurer &lt;wordasword ling:type="depend"&gt;le&lt;/wordasword&gt;
+&lt;phrase content:ref="Device"/&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After transclusion</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Pour configurer &lt;wordasword ling:type="depend"&gt;le&lt;/wordasword&gt;
+&lt;phrase&gt;
+  &lt;phrase os="tablet" ling:gen="f" ling:pron="C"&gt;tablette&lt;/phrase&gt;
+  &lt;phrase os="PC" ling:gen="m" ling:pron="V"&gt;ordinateur&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(No head noun inflection necessary.)</p>
+</div>
+<div class="listingblock">
+<div class="title">After conditional processing</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Pour configurer &lt;wordasword ling:type="depend"&gt;le&lt;/wordasword&gt;
+&lt;phrase&gt;
+  &lt;phrase os="tablet" ling:gen="f" ling:pron="C"&gt;tablette&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;
+
+&lt;title&gt;Pour configurer &lt;wordasword ling:type="depend"&gt;le&lt;/wordasword&gt;
+&lt;phrase&gt;
+  &lt;phrase os="PC" ling:gen="m" ling:pron="V"&gt;ordinateur&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After dependent word inflection</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;title&gt;Pour configurer &lt;wordasword ling:type="depend"&gt;la &lt;/wordasword&gt;
+&lt;phrase&gt;
+  &lt;phrase os="tablet" ling:gen="f" ling:pron="C"&gt;tablette&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;
+
+&lt;title&gt;Pour configurer
+&lt;wordasword ling:type="depend"&gt;l’&lt;/wordasword&gt;
+&lt;phrase&gt;
+  &lt;phrase os="PC" ling:gen="m" ling:pron="V"&gt;ordinateur&lt;/phrase&gt;
+&lt;/phrase&gt;&lt;/title&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Original</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dies&lt;/wordasword&gt;
+&lt;phrase content:ref="Doc" ling:case="dat"/&gt;
+nicht enthalten.&lt;/para&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After transclusion</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dies&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="PDF" ling:gen="n" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="nom"&gt;Dokument&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="acc"&gt;Dokument&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="gen"&gt;Dokuments&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Dokument&lt;/phrase&gt;
+  &lt;/phrase&gt;
+  &lt;phrase audience="CHM" ling:gen="f" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="nom"&gt;Hilfedatei&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="acc"&gt;Hilfedatei&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="gen"&gt;Hilfedatei&lt;/phrase&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Hilfedatei&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After head noun declension</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dies&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="PDF" ling:gen="n" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Dokument&lt;/phrase&gt;
+  &lt;/phrase&gt;
+  &lt;phrase audience="CHM" ling:gen="f" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Hilfedatei&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After conditional processing</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dies&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="PDF" ling:gen="n" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Dokument&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;
+
+&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dies&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="CHM" ling:gen="f" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Hilfedatei&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">After dependent word inflection</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;diesem&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="PDF" ling:gen="n" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Dokument&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;
+
+&lt;para&gt;Die Einstellung der IP-Adresse ist in
+&lt;wordasword ling:type="depend"&gt;dieser&lt;/wordasword&gt;
+&lt;phrase ling:case="dat"&gt;
+  &lt;phrase audience="CHM" ling:gen="f" ling:num="sg"&gt;
+    &lt;phrase ling:type="head" ling:case="dat"&gt;Hilfedatei&lt;/phrase&gt;
+  &lt;/phrase&gt;
+&lt;/phrase&gt;
+nicht enthalten.&lt;/para&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Linguistic-Processing-Limitations"><a class="anchor" href="#Linguistic-Processing-Limitations"></a>Limitations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This mechanism is only suited for inflecting the dependent words within
+a noun phrase, i.e. determiners and adjectives. It cannot conjugate
+verbs, e.g. to select the correct (singular or plural) form of the verb
+based on the number of the subject.</p>
+</div>
+<div class="paragraph">
+<p>The solution is has been developed primarily for western European
+languages. It has been tested with English, German, French, Spanish,
+Dutch, Swedish, Italian, Portuguese, Norwegian Bokmål and Finnish. It
+may be possible to use it with, for example, Arabic, Chinese or
+Japanese, but further development would be required.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

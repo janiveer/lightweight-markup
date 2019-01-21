@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XliffTag.xsl :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/xliff/XliffTag.xsl.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">XLIFF Stylesheets</li>
+    <li class="crumb"><a href="XliffTag.xsl.html">XliffTag</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/xliff/pages/XliffTag.xsl.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>XliffTag.xsl</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<blockquote>
+Converts a temporary, invalid XLIFF file with unescaped inline markup to a valid XLIFF
+file with <strong>g</strong>, <strong>x</strong>, <strong>ph</strong> and <strong>mrk</strong> elements.
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="parameters"><a class="anchor" href="#parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>[DefaultNS]</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>DefaultNS</code> (URI)</dt>
+<dd>
+<p>The URI of the default namespace of the inline
+elements. Default is the DocBook namespace.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="input"><a class="anchor" href="#input"></a>Input</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A temporary, invalid
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> document
+containing unescaped inline markup.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="output"><a class="anchor" href="#output"></a>Output</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An <a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a>
+document containing g, ph, x and mrk elements. This is the format
+preferred by many translation houses.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="description"><a class="anchor" href="#description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The stylesheet copies the structure and content of the input document to
+the output document. Any inline markup within the input document is
+transformed as follows.</p>
+</div>
+<div class="paragraph">
+<p>Processing instructions with no content are exported as x elements. The
+ctype attribute is set to x-pi- plus the name of the processing
+instruction. As an exception, the linebreak processing instruction is
+exported as an x element with ctype='lb'.</p>
+</div>
+<div class="paragraph">
+<p>Processing instructions containing text are exported as ph elements. The
+ctype attribute is set to x-pi- plus the name of the processing
+instruction. The content of the processing instruction is exported as
+the content of the ph element.</p>
+</div>
+<div class="paragraph">
+<p>Elements containing no content are exported as x elements. The ctype
+attribute is set to x-, followed by the prefix associated with the
+namespace of the current element, followed by a hyphen, followed by the
+name of the current element. If the namespace of the element is not
+specified, it is assumed to be the namespace associated with the URI
+specified by the <code>DefaultNS</code> parameter — by default, DocBook.</p>
+</div>
+<div class="paragraph">
+<p>Elements containing content are exported as g elements. The ctype
+attribute is set to x-, followed by the prefix associated with the
+namespace of the current element, followed by a hyphen, followed by the
+name of the current element. If the namespace of the element is not
+specified, it is assumed to be the namespace associated with the URI
+specified by the <code>DefaultNS</code> parameter — by default, DocBook.</p>
+</div>
+<div class="paragraph">
+<p>The g or x elements have an id attribute whose value is unique and is
+based on the ID of the current translation unit.</p>
+</div>
+<div class="paragraph">
+<p>Child attributes of the elements in the input file are added to the g or
+x element. If the attribute is in an explicit namespace, the attribute
+is exported in the same namespace. If the attribute is in no namespace,
+it is exported in a special namespace whose prefix is nn and whose URI
+is urn:x-no-namespace. This is to distinguish between
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a>
+attributes and attributes from the source file.</p>
+</div>
+<div class="paragraph">
+<p>There are three exceptions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Elements with the content:ref attribute are exported as ph elements
+whose content is the value of the content:ref attribute. This makes the
+translation unit read more naturally and can help the translators
+establish the correct word order and punctuation. The ctype and other
+attributes of this ph element are set as above.</p>
+</li>
+<li>
+<p>The its:term='yes' attribute is exported as a child mrk mtype='term'
+element which contains the content of the parent element.</p>
+</li>
+<li>
+<p>The its:locNote attribute is exported as a child mrk mtype='phrase'
+element which contains the content of the parent element. The value of
+the its:locNote attribute is exported as a comment attribute on the mrk
+mtype='phrase' element.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The content of the source element is copied to any target element which
+is currently empty. This is to meet the requirements of translation
+houses who prefer the target element to start with the source text. The
+output of the <a href="XliffTemp.xsl.html" class="page">XliffTemp.xsl</a> stylesheet is intended
+to be used as input for this stylesheet.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

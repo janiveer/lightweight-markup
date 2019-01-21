@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDF Applicability :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/introduction/RDF-Applicability.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../translation/XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">Concepts</li>
+    <li class="crumb"><a href="RDF-Applicability.html">RDF Applicability</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/introduction/pages/RDF-Applicability.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>RDF Applicability</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can add applicability metadata to a DocBook document to declare the
+hardware or software products that the document applies to.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="RDF-Applicability-Where"><a class="anchor" href="#RDF-Applicability-Where"></a>Where to Add Applicability Metadata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Applicability metadata takes the form of RDF triples. For a DocBook 5.0
+document, you add it to the info element at the start of the document.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="RDF-Applicability-How"><a class="anchor" href="#RDF-Applicability-How"></a>How to Write It</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Typical applicability metadata for a DocBook document looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:bibo="http://purl.org/ontology/bibo/"
+         xmlns:vivo="http://vivoweb.org/ontology/core#"
+         xmlns:doap="http://usefulinc.com/ns/doap#"&gt;
+    &lt;bibo:Document rdf:about=""&gt; <i class="conum" data-value="1"></i><b>(1)</b>
+        &lt;vivo:hasSubjectArea&gt; <i class="conum" data-value="2"></i><b>(2)</b>
+            &lt;rdf:Bag&gt;
+                &lt;rdf:li rdf:parseType="Resource"&gt; <i class="conum" data-value="3"></i><b>(3)</b>
+                    &lt;doap:shortdesc&gt;P/N 1234&lt;/doap:shortdesc&gt; <i class="conum" data-value="4"></i><b>(4)</b>
+                    &lt;doap:name&gt;Foo 3000&lt;/doap:name&gt;
+                    &lt;doap:description&gt;Quantum Accelerator&lt;/doap:description&gt;
+                    &lt;doap:revision&gt;1.0.1&lt;/doap:revision&gt;
+                &lt;/rdf:li&gt;
+                &lt;rdf:li rdf:parseType="Resource"&gt;
+                    &lt;doap:shortdesc&gt;P/N 5678&lt;/doap:shortdesc&gt;
+                    &lt;doap:name&gt;Foo Explorer&lt;/doap:name&gt;
+                    &lt;doap:description&gt;Config File Viewer&lt;/doap:description&gt;
+                    &lt;doap:revision&gt;1.0.2&lt;/doap:revision&gt;
+                &lt;/rdf:li&gt;
+            &lt;/rdf:Bag&gt;
+        &lt;/vivo:hasSubjectArea&gt;
+        &lt;!-- Other RDF properties ... --&gt;
+    &lt;/bibo:Document&gt;
+&lt;/rdf:RDF&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example:</p>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The bibo:Document element declares that this file is a document and
+that this document is the subject of the applicability metadata.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The vivo:hasSubjectArea element declares that this document applies to
+the following products.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>The products are indicated by rdf:li elements all wrapped within the
+rdf:Bag element. Each rdf:li element has rdf:parseType set to Resource;
+this enables you to specify the properties of each product inline.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>The properties of each product are indicated by elements in the doap
+namespace. In PACBook, doap:shortdesc is used for the product’s part
+number, doap:name is used for the product name, doap:description for a
+description of the product and doap:revision for the product version
+number.</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You need to declare the rdf, bibo, vivo and doap namespaces.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="RDF-Applicability-Roadmap"><a class="anchor" href="#RDF-Applicability-Roadmap"></a>Roadmap</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The ultimate intention is that each rdf:li could point to an external
+RDF resource which contains the details of the product in a single
+location, e.g. in a products database. This is not yet implemented.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

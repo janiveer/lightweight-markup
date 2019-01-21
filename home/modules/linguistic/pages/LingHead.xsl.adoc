@@ -1,0 +1,72 @@
+= LingHead.xsl
+
+[abstract]
+Selects the required declension of head nouns in an XML document.
+
+== Parameters
+
+None.
+
+Input
+-----
+
+An XML document. You must mark up the source document with
+xref:introduction:Linguistic-Processing.adoc[linguistic attributes] describing the
+syntactic case and / or definiteness required for each head noun in the
+document.
+
+Output
+------
+
+An XML document, identical to the input except that head nouns are
+declined for syntactic case and / or definiteness.
+
+Description
+-----------
+
+The stylesheet recurses through the document and copies each element.
+When the stylesheet finds an element with the ling:type='head'
+attribute, it checks for the required definiteness and syntactic case
+according to the following algorithm:
+
+. The required definiteness is taken to be the value of the nearest
+ancestor ling:class attribute; if there isn’t one, the required
+definiteness is assumed to be ind (indefinite).
+. The required syntactic case is taken to be the value of the nearest
+ancestor ling:case attribute; if there isn’t one, the required syntactic
+case is assumed to be nom (nominative).
+
+The stylesheet then checks for the definiteness and syntactic case of
+the current head element according to the following algorithm:
+
+. If the current head element has an ling:class attribute, its value
+is taken as the head element’s definiteness; if it doesn’t, the head
+element’s definiteness is assumed to be ind (indefinite).
+. If the current head element has an ling:case attribute, its value is
+taken as the head element’s syntactic case; if it doesn’t, the head
+element’s syntactic case is assumed to be nom (nominative).
+
+If the case and class of the head element match the required case and
+class, the head element is copied to the output; if not, the head
+element and all its descendent elements are deleted.
+
+This is useful when you need to transclude a term into a sentence and
+want to select the correct form of the term, depending on the case and /
+or definiteness required in the target sentence.
+
+This stylesheet should be applied after the head nouns have all been
+transcluded into place.
+
+Roadmap
+-------
+
+The stylesheet does not decline head nouns for grammatical number, i.e.
+singular or plural. (Dependent words _are_ declined for number.) It is
+currently assumed that you will define separate transclusion resources
+for the singular and plural forms of a word. This may change in future,
+especially if the stylesheets move to support languages that have more
+than two grammatical numbers.
+
+In DocBook files, this stylesheet matches token elements as well as
+elements with the ling:type='head' attribute. This may be removed in a
+future release.

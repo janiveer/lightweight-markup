@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XlateMarkup.xsl :: AsciiDoc Demo</title>
+    <link rel="canonical" href="https://janiveer.github.io/lightweight-markup/home/translation/XlateMarkup.xsl.html">
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://janiveer.github.io/lightweight-markup">AsciiDoc Demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="home" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/Linguistic-Processing.html">Linguistic Processing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/PACBook-Schema.html">PACBook Schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Applicability.html">RDF Applicability</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/RDF-Translations.html">RDF Translations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Transclusion Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransID.xsl.html">TransID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransLinks.xsl.html">TransLinks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../transclusion/TransParam.xsl.html">TransParam</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Linguistic Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingCasing.xsl.html">LingCasing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingDepend.xsl.html">LingDepend</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../linguistic/LingHead.xsl.html">LingHead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Text Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextAbbrev.xsl.html">TextAbbrev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../text/TextNumbers.xsl.html">TextNumbers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">DocBook Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBAdmon.xsl.html">DBAdmon</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBGloss.xsl.html">DBGloss</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBImage.xsl.html">DBImage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBLists.xsl.html">DBLists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProcs.xsl.html">DBProcs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBProfile.xsl.html">DBProfile</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/DBRels.xsl.html">DBRels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../docbook/RefResolve.xsl.html">RefResolve</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Translation Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="XlateMarkup.xsl.html">XlateMarkup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateExtract.xsl.html">XlateExtract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateConvert.xsl.html">XlateConvert</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateCombine.xsl.html">XlateCombine</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateID.xsl.html">XlateID</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateDiff.xsl.html">XlateDiff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="XlateMerge.xsl.html">XlateMerge</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">XLIFF Stylesheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XL2Xliff.xsl.html">XL2Xliff</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/Xliff2CSV.xsl.html">Xliff2CSV</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffDupe.xsl.html">XliffDupe</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffPurge.xsl.html">XliffPurge</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffRaw.xsl.html">DoXliffRaw</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTag.xsl.html">XliffTag</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xliff/XliffTemp.xsl.html">XliffTemp</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Home</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Home</a></li>
+    <li class="crumb">Translation Stylesheets</li>
+    <li class="crumb"><a href="XlateMarkup.xsl.html">XlateMarkup</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/simon/Applications/lightweight-markup/home/modules/translation/pages/XlateMarkup.xsl.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>XlateMarkup.xsl</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<blockquote>
+Marks up translatable elements in an XML document with a unique <strong>xlf:id</strong> attribute.
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="parameters"><a class="anchor" href="#parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>[ITS] [Counter] [Carried]</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>ITS</code> (URI)</dt>
+<dd>
+<p>URI of the <a href="http://www.w3.org/TR/its20/">ITS</a> rules file,
+absolute or relative to the stylesheet</p>
+</dd>
+<dt class="hdlist1"><code>Counter</code> (URI)</dt>
+<dd>
+<p>URI of the input counter file, absolute or relative
+to the input document</p>
+</dd>
+<dt class="hdlist1"><code>Carried</code> (URI)</dt>
+<dd>
+<p>URI of the output counter file, absolute or relative
+to the input document</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="input"><a class="anchor" href="#input"></a>Input</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An XML document. DocBook is supported by default; SVG to follow.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="output"><a class="anchor" href="#output"></a>Output</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An XML document, identical to the input except that translation strings
+are uniquely identified by auto-generated xlf:id attributes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="description"><a class="anchor" href="#description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The stylesheet first looks for the translation unit counter specified by
+the <code>Counter</code> parameter. This translation unit counter is an
+automatically-generated XML document containing a single element,
+data:counter xmlns:data='urn:x-pacbook:data'. The data:counter element
+contains a text node, which must be an integer. It can also have a
+single attribute, prefix, which should contain an alphanumeric string.</p>
+</div>
+<div class="paragraph">
+<p>The purpose of the translation unit counter is to keep track of the
+translation unit IDs which have been assigned to this document, and
+ensure that newly marked-up translatable elements get unique IDs. The
+simplest use case would be to have a single translation unit counter for
+all your documents. Realistically you would use more than one
+translation counter. Several related documents might share a translation
+unit counter; this would imply that the related documents are all
+translated together, using a single
+<a href="http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html">XLIFF</a> file for
+each target language. You could also, if you wanted, use a different
+prefix with each translation unit counter, but this is not necessary.</p>
+</div>
+<div class="paragraph">
+<p>If the translation unit counter is not specified, it is assumed to be
+<code>counter.xml</code> in the same location as the input document.</p>
+</div>
+<div class="paragraph">
+<p>If the specified translation unit counter is not found, the prefix is
+assumed to be u and the count is set to 0.</p>
+</div>
+<div class="paragraph">
+<p>The stylesheet then looks for the specified
+<a href="http://www.w3.org/TR/its20/">ITS</a> rules file. This is a set of
+<a href="http://www.w3.org/TR/its20/">ITS</a> 2.0 rules that specify which elements
+in the input file correspond to translation units. For each
+its:withTextRule element in the <a href="http://www.w3.org/TR/its20/">ITS</a> rules
+file, if the withinText attribute is set to no, the elements specified
+by the selector attribute correspond to translation units. If no
+<a href="http://www.w3.org/TR/its20/">ITS</a> rules file is specified, the default is
+the <code>DocBook.its</code> file supplied with this stylesheet.</p>
+</div>
+<div class="paragraph">
+<p>The stylesheet then copies the structure and content of the input
+document to the output document. Any elements which match the specified
+<a href="http://www.w3.org/TR/its20/">ITS</a> rules are marked up with a unique
+xlf:id attribute, as long as:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>They are <em>not</em> marked with the its:translate='no' attribute, and:</p>
+</li>
+<li>
+<p>They do not have an xlf:id attribute already.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Furthermore, any elements which are marked with the its:translate='yes'
+attribute are also marked up with a unique xlf:id attribute, as long as
+they do not have an xlf:id attribute already.</p>
+</div>
+<div class="paragraph">
+<p>The value of the xlf:id attribute consists of the specified prefix,
+followed by a sequential count of the newly marked up translatable
+elements, starting at the next number after the number specified in the
+translation unit counter, if any. (The xlf:id attribute is used in
+preference to xml:id because transclusion might mean that the same
+translatable element occurs in several places in the same document, and
+xml:id must contain unique values.)</p>
+</div>
+<div class="paragraph">
+<p>Finally, the new total number of marked up translatable elements is
+written out to the translation unit counter file specified by the
+<code>Carried</code> parameter. By default, this is assumed to be <code>counter.xml</code> in
+the same location as the input document, thus overwriting the original
+translation unit counter file with the new total.</p>
+</div>
+<div class="paragraph">
+<p>In theory, this stylesheet can be used to mark up any XML document, as
+long as a correctly formatted <a href="http://www.w3.org/TR/its20/">ITS</a> rules
+file is supplied. However, you must make sure that any namespaces
+specified in the <a href="http://www.w3.org/TR/its20/">ITS</a> rules file are also
+declared in this stylesheet.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
