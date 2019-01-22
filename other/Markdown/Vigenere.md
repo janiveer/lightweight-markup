@@ -10,6 +10,8 @@ almost completely useless for security purposes. However this cypher turns up re
 frequently in the books I’ve been reading lately, so I wrote this library for fun and
 convenience.
 
+![Blaise de Vigenère](200px-Vigenere.png)
+
 The name Vigenère properly includes a grave accent. I’ve omitted the accent in file
 names, namespaces, namespace prefixes and repository names, to avoid possible problems
 with accented characters. I know, it shouldn’t be a problem in this day and age, but
@@ -58,18 +60,18 @@ I’ve also provided a few example files.
 You can use the files in the `examples` folder to try out different key codes and crack
 the cypher:
 
-<pre>
+```
 xsltproc Demo.xsl examples/Feel_the_Fear.xml
-</pre>
+```
 
 The files in the `spoilers` folder already contain the correct key codes, so don’t peek
 if you want to solve them yourself!
 
-<pre>
+```
 xsltproc Demo.xsl spoilers/Red_Shift.xml
-</pre>
+```
 
-### Note
+**Note**
 
 It’s possible to use the decryption operation on plain text, giving a different cypher
 text to what you would get using the encryption operation. Cypher text encrypted in this
