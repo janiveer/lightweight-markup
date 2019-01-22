@@ -8,21 +8,15 @@ references, against an XML catalog.
 
 None.
 
-Input
------
-
+== Input
 A DocBook document, in which some images have a fileref attribute which
 is set to a URI.
 
-Output
-------
-
+== Output
 A DocBook document, identical to the input except that any fileref
 attributes are resolved against the XML catalog.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element. If
 any element has the attribute fileref, which contains a URI starting
 with http://, the stylesheet resolves the URI against the XML catalog.
@@ -30,9 +24,7 @@ with http://, the stylesheet resolves the URI against the XML catalog.
 This is useful if you wish to reference remote resources in the
 document.
 
-Notes
------
-
+== Notes
 This stylesheet only works with Java-based XSLT processors. It has been
 tested with Saxon 6.5.5. To use it, you must:
 
@@ -45,8 +37,6 @@ catalog.
 `CatalogManager.properties` to your classpath when you invoke the XSLT
 processor.
 
-Roadmap
--------
-
+== Roadmap
 Generalise to work with any specified attribute in any specified
 namespace.

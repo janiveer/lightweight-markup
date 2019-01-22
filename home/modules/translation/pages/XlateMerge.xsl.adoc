@@ -15,9 +15,7 @@ http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file
 `Diff` (URI):: The URI of the differential
 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with:
 
 . The xlf:id attributes which uniquely identify each translation
@@ -28,15 +26,11 @@ http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] files
 which contain the translations of the document — this is only required
 if you are not specifying the `Xliff` parameter explicitly.
 
-Output
-------
-
+== Output
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document.
 
-Description
------------
-
+== Description
 The stylesheet examines the source file for translatable elements. (A
 translatable element is one which has an xlf:id attribute and does not
 have the its:translate='no' attribute.)

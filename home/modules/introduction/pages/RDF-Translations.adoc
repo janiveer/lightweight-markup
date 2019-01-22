@@ -5,9 +5,7 @@ tell PACBook where the translations for that document are. You do this
 by adding translation metadata to the document.
 
 [[RDF-Translations-Where]]
-Where to Add Translation Metadata
----------------------------------
-
+== Where to Add Translation Metadata
 Translation metadata takes the form of RDF triples. You add it to the
 metadata section of the XML document. So, for a DocBook 5.0 document,
 you add it to the info element at the start of the document. For an SVG
@@ -15,9 +13,7 @@ document, you add it to the metadata element at the start of the
 document.
 
 [[RDF-Translations-How]]
-How to Write It
----------------
-
+== How to Write It
 Typical translation metadata for a DocBook document looks like this:
 
 [source,xml]
@@ -63,9 +59,7 @@ to define the full URI.
 NOTE: You need to declare the rdf, bibo and vivo namespaces.
 
 [[RDF-Translations-Part]]
-Translation Metadata for Part of a Document
--------------------------------------------
-
+== Translation Metadata for Part of a Document
 Different parts of a document might store their translations in
 different
 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] files.

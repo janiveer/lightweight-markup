@@ -6,22 +6,16 @@ Creates automatic titles for admonitions in a DocBook document.
 == Parameters
 None.
 
-Input
------
-
+== Input
 A DocBook document. Any admonitions (important, caution, note, tip or
 warning) for which you want an automatic title must have an empty title
 element.
 
-Output
-------
-
+== Output
 A DocBook document, identical to the input except that admonitions have
 titles in the appropriate language.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element.
 When it finds the title element of an admonition, if the title element
 is empty, the stylesheet gets the language specified by the nearest

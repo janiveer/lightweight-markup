@@ -9,21 +9,15 @@ Enables fine-grained fixup of *xml:id* attributes after transclusion.
 `idRole` (URI):: A URI which identifies the ID fixup XLink role.
 Default is http://stanleysecurity.github.io/PACBook/role/id.
 
-Input
------
-
+== Input
 An XML document containing extended links to fix up transcluded XML IDs
 as described below.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that XML IDs are fixed
 up.
 
-Description
------------
-
+== Description
 This stylesheet is useful if you have a subdocument which contains XML
 IDs and which must be transcluded into an assembly file or master
 document in two or more places. In order to avoid validation errors,
@@ -67,9 +61,7 @@ After you have fixed up IDs, you may also need to fix up cross
 references or links that point to those IDs. See
 xref:TransLinks.xsl.adoc[TransLinks.xsl].
 
-Roadmap
--------
-
+== Roadmap
 At present this stylesheet requires that the extended links, locators
 and arcs are DocBook extendedlink, locator and arc elements, meaning
 that the stylesheet only works with DocBook. In future releases, this

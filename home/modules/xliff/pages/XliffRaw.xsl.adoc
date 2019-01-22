@@ -11,22 +11,16 @@ escaped inline markup.
 `DefaultNS` (URI)::  The URI of the default namespace of the inline
 elements. Default is the DocBook namespace.
 
-Input
------
-
+== Input
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document containing g, ph, x and mrk elements.
 
-Output
-------
-
+== Output
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document containing escaped inline markup. This the format used by
 PACBook.
 
-Description
------------
-
+== Description
 The stylesheet copies the structure and content of the input document to
 the output document. Any g, ph, x and mrk elements within the source
 elements in the input document are transformed as follows.

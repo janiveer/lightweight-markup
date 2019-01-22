@@ -7,23 +7,17 @@ Selects the required declension of head nouns in an XML document.
 
 None.
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with
 xref:introduction:Linguistic-Processing.adoc[linguistic attributes] describing the
 syntactic case and / or definiteness required for each head noun in the
 document.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that head nouns are
 declined for syntactic case and / or definiteness.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element.
 When the stylesheet finds an element with the ling:type='head'
 attribute, it checks for the required definiteness and syntactic case
@@ -57,9 +51,7 @@ or definiteness required in the target sentence.
 This stylesheet should be applied after the head nouns have all been
 transcluded into place.
 
-Roadmap
--------
-
+== Roadmap
 The stylesheet does not decline head nouns for grammatical number, i.e.
 singular or plural. (Dependent words _are_ declined for number.) It is
 currently assumed that you will define separate transclusion resources

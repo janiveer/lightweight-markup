@@ -1,9 +1,7 @@
 = Linguistic Processing
 
 [[Linguistic-Processing-Intro]]
-Introduction
-------------
-
+== Introduction
 Transclusion can be divided into large scale,
 http://en.wikipedia.org/wiki/Transclusion#Context_neutrality[context-free
 transclusion] and small scale,
@@ -71,9 +69,7 @@ These problems can often be avoided by careful wording and translation.
 In some circumstances, though, they may be unavoidable.
 
 [[Linguistic-Processing-Problem-1]]
-Problem 1: Inflecting Dependent Words
--------------------------------------
-
+== Problem 1: Inflecting Dependent Words
 If the transcluded word or phrase is the
 https://en.wikipedia.org/wiki/Head_(linguistics)[head] of a noun phrase,
 further changes may be required in
@@ -114,9 +110,7 @@ genders in other languages, so dependent articles and adjectives will
 also have to change in agreement with the selected term.
 
 [[Linguistic-Processing-Problem-2]]
-Problem 2: Declining the Head Word
-----------------------------------
-
+== Problem 2: Declining the Head Word
 In many languages other than English, the form of the transcluded
 snippet itself might vary, depending on the role of the term in the
 sentence. (This usually only applies if the transcluded text is a common
@@ -140,9 +134,7 @@ https://jfearn.fedorapeople.org/en-US/Publican/4.0/html/Users_Guide/chap-Publica
 documentation].
 
 [[Linguistic-Processing-Principles]]
-Principles
-----------
-
+== Principles
 PACBook uses the following mechanism to select the correct form of a
 transcluded head word and any dependent words:
 
@@ -164,9 +156,7 @@ http://www.w3.org/TR/xproc/[XProc] pipeline to automate the publication
 process.
 
 [[Linguistic-Processing-Markup]]
-Linguistic Markup
------------------
-
+== Linguistic Markup
 PACBook linguistic markup consists of the following XML attributes. It
 may be necessary to customise or extend the markup schema of the
 document to include these attributes. These attributes are defined as
@@ -223,9 +213,7 @@ sound. An acronym like XML is written with an initial consonant but
 pronounced with an initial vowel, i.e. "ex em el".
 
 [[Linguistic-Processing-Head]]
-Head Markup
------------
-
+== Head Markup
 When you define a transclusion resource containing a head word, you must
 also mark attributes on the head word to indicate any linguistic
 features which demand agreement from dependent words. The head word must
@@ -247,9 +235,7 @@ terms:
 ....
 
 [[Linguistic-Processing-Depend]]
-Dependent Markup
-----------------
-
+== Dependent Markup
 A dependent word should have the ling:type='depend' attribute to
 indicate that it is a dependent word. Again, this linguistic attribute
 must be applied to a wrapper element.
@@ -293,9 +279,7 @@ angezeigt.</para>
 ....
 
 [[Linguistic-Processing-Definitions]]
-Declension Markup
------------------
-
+== Declension Markup
 If the head noun is declinable, you must include in the transclusion
 resource all the possible forms of the noun in the current language.
 Again, each form must be wrapped in a suitable spanning element. Each
@@ -327,9 +311,7 @@ It is currently assumed that you will define separate transclusion
 resources for the singular and plural forms of a word.
 
 [[Linguistic-Processing-References]]
-Specifying the Required Form
-----------------------------
-
+== Specifying the Required Form
 At each location where a declinable term is to be transcluded, you must
 mark up the case and / or definiteness you require for this instance of
 the term, depending on the current language. This may require that you
@@ -345,9 +327,7 @@ definite:
 ....
 
 [[Linguistic-Processing-Dictionary]]
-Dictionary
-----------
-
+== Dictionary
 The syntactic dictionaries are XML dictionaries using a schema which
 complies with the dictionary module of the http://www.tei-c.org/[Text
 Encoding Initiative] (TEI). The dictionaries are primarily designed to
@@ -364,9 +344,7 @@ hand. Ideally this process could be automated by taking information from
 on-line dictionaries such as https://en.wiktionary.org[Wiktionary].
 
 [[Linguistic-Processing-Stylesheets]]
-Stylesheets
------------
-
+== Stylesheets
 The xref:linguistic:LingHead.xsl.adoc[LingHead.xsl] stylesheet enables you to select
 the required declension of head nouns in an XML document, according to
 the case and / or definiteness required in the target sentence.
@@ -377,9 +355,7 @@ adjectives, and relative pronouns, according to the syntactic and / or
 phonetic environment for each dependent word.
 
 [[Linguistic-Processing-Examples]]
-Examples
---------
-
+== Examples
 ====
 .Original
 [source,xml]
@@ -524,9 +500,7 @@ nicht enthalten.</para>
 ====
 
 [[Linguistic-Processing-Limitations]]
-Limitations
------------
-
+== Limitations
 This mechanism is only suited for inflecting the dependent words within
 a noun phrase, i.e. determiners and adjectives. It cannot conjugate
 verbs, e.g. to select the correct (singular or plural) form of the verb

@@ -7,21 +7,15 @@ Purges duplicate translation units from an XLIFF file.
 
 None.
 
-Input
------
-
+== Input
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document.
 
-Output
-------
-
+== Output
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document.
 
-Description
------------
-
+== Description
 This is a deterministic deduplication; the stylesheet checks for
 translation units with duplicate IDs, keeps the first and discards any
 others.

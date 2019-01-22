@@ -9,20 +9,14 @@ Enables parametrised transclusion.
 `defRole` (URI):: A URI which identifies the transclusion XLink role.
 Default is http://stanleysecurity.github.io/PACBook/role/transclusion.
 
-Input
------
-
+== Input
 An XML document containing transclusion definitions and references.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that transclusion
 references are replaced by their definitions.
 
-Description
------------
-
+== Description
 This stylesheet enables you to transclude small snippets of XML; for
 example, to insert a product name at multiple locations in the document.
 It is complementary to the standard XML methods of transclusion using
@@ -73,9 +67,8 @@ Small scale, inline transclusion can have linguistic consequences. See
 xref:introduction:Linguistic-Processing.adoc[Linguistic Processing] for details of the
 mechanism that PACBook attempts to deal with these problems.
 
-Notes
-~~~~~
-
+[NOTE]
+====
 * In order to avoid the problem of duplicate IDs, transclusion resources
 simply should not contain XML IDs. You could use a schematron rule to
 enforce this.
@@ -90,10 +83,9 @@ possible to use a link element with the xl:type='resource' attribute,
 but this has not been tested.) The PACBook schema also adds the
 content:ref attribute to the common attributes. See the
 xref:introduction:PACBook-Schema.adoc[PACBook RNG schema].
+====
 
-Roadmap
--------
-
+== Roadmap
 Extended links are overloaded in PACBook. Perhaps find some other markup
 for parametrised transclusion definitions, e.g.
 http://purl.org/spar/doco[DoCO] or the

@@ -11,21 +11,15 @@ transclusion.
 `abbrevClassRef` (URI):: a URI that identifies abbreviations. Default
 http://dbpedia.org/ontology/abbreviation.
 
-Input
------
-
+== Input
 An XML document. Any abbreviations whose punctuation needs checking must
 be marked up with ITS 2.0 text analysis attributes as described below.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that abbreviations are
 punctuated correctly.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element. If
 any element has the attribute
 its:taClassRef='http://dbpedia.org/ontology/abbreviation', the
@@ -46,9 +40,7 @@ sentence it will _not_ end up with two following full stops.
 To use the its:taClassRef attribute you must set its:version='2.0' on
 the element or on the containing document.
 
-Roadmap
--------
-
+== Roadmap
 In DocBook files, this stylesheet matches abbrev elements as well as
 elements with the
 its:taClassRef='http://dbpedia.org/ontology/abbreviation' attribute.

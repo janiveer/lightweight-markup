@@ -4,16 +4,12 @@ You can add applicability metadata to a DocBook document to declare the
 hardware or software products that the document applies to.
 
 [[RDF-Applicability-Where]]
-Where to Add Applicability Metadata
------------------------------------
-
+== Where to Add Applicability Metadata
 Applicability metadata takes the form of RDF triples. For a DocBook 5.0
 document, you add it to the info element at the start of the document.
 
 [[RDF-Applicability-How]]
-How to Write It
----------------
-
+== How to Write It
 Typical applicability metadata for a DocBook document looks like this:
 
 [source,xml]
@@ -62,9 +58,7 @@ number.
 NOTE: You need to declare the rdf, bibo, vivo and doap namespaces.
 
 [[RDF-Applicability-Roadmap]]
-Roadmap
--------
-
+== Roadmap
 The ultimate intention is that each rdf:li could point to an external
 RDF resource which contains the details of the product in a single
 location, e.g. in a products database. This is not yet implemented.

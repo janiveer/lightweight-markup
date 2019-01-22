@@ -15,21 +15,15 @@ http://www.iana.org/assignments/relation/collection.
 `linkStyle` (String):: the style string that determines the content of
 the automatic links; default select: title.
 
-Input
------
-
+== Input
 A DocBook document. The start locations and sections to be included in
 automatic links must be marked up as described below.
 
-Output
-------
-
+== Output
 A DocBook document, identical to the input but with automatic links
 between sections of the document.
 
-Description
------------
-
+== Description
 To use this stylesheet you must assign a name to each set of related
 sections. You mark up the location for a list of automatic links by
 adding, in the info section at the start of a chapter or section, an
@@ -64,9 +58,7 @@ The list is positioned after any body text, but before any subsections.
 Each link in the list is an xref element; the content is determined by
 the xrefstyle attribute, which by default is set to select: title.
 
-Resource Elements
-~~~~~~~~~~~~~~~~~
-
+=== Resource Elements
 DocBook 5.0 does not have XLink resource elements. For this purpose,
 PACBook provides a custom layer for the DocBook 5.0 chema which adds a
 resource element to the extendedlink element. See the
@@ -74,9 +66,7 @@ xref:introduction:PACBook-Schema.adoc[PACBook RNG schema]. (In DocBook 5.1 it ma
 possible to use a link element with the xl:type='resource' attribute,
 but this has not been tested.)
 
-Link Titles
-~~~~~~~~~~~
-
+=== Link Titles
 Before the itemizedlist of links, the stylesheet creates an introductory
 para element in the language determined by the nearest ancestor xml:lang
 attribute. By default, this contains the text called links from

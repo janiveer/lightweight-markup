@@ -14,20 +14,14 @@ quote.
 `Header` (Boolean)::  Whether or not the first row is a header row.
 Default false.
 
-Input
------
-
+== Input
 An http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF]
 document.
 
-Output
-------
-
+== Output
 A tab or comma delimited text file.
 
-Description
------------
-
+== Description
 The stylesheet exports the content of an
 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file as
 a UTF-8 encoded, tab or comma delimited text file. This can be imported

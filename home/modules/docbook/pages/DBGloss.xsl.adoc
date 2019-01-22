@@ -12,21 +12,15 @@ in the document.
 the stylesheet should make when following glosssee and glossseealso
 links; default 8.
 
-Input
------
-
+== Input
 A DocBook document. Any glossary which is to be build automatically must
 be marked up as described below.
 
-Output
-------
-
+== Output
 A DocBook document, identical to the input except the glossary is built
 and glossary entries have XLink titles.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element. If
 any element is a glossary with the role='collection' attribute, the
 stylesheet checks every glossentry element to see if it is referenced by

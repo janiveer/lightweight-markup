@@ -9,19 +9,13 @@ based on the document’s ID.
 All of the DocBook XSL stylesheet profiling parameters, except for
 `profile.condition` — see below.
 
-Input
------
-
+== Input
 A DocBook document with conditional profiling attributes.
 
-Output
-------
-
+== Output
 A profiled DocBook document.
 
-Description
------------
-
+== Description
 This stylesheet is a custom layer which imports the `profile.xsl`
 stylesheet from the DocBook XSL stylesheets.
 
@@ -54,8 +48,6 @@ transclusion _before_ conditional profiling, and you should process
 dynamic links, simple lists and syntactic processing _after_ conditional
 profiling.
 
-Roadmap
--------
-
+== Roadmap
 Add support for its:localeFilterList and its:localeFilterType
 attributes.

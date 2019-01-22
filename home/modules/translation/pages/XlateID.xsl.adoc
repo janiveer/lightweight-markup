@@ -10,20 +10,14 @@ Adds a language code to *xml:id* attributes and the links that refer to them.
 `noFixupURI` (URI):: the XLink role used to identify links which
 should not be fixed up; default http://schema.org/significantLink.
 
-Input
------
-
+== Input
 An XML document. The root element of the document must have an xml:lang
 attribute.
 
-Output
-------
-
+== Output
 An XML document.
 
-Description
------------
-
+== Description
 This stylesheet copies the source document, and adds the language code
 specified on the document’s root element to the end of all xml:id
 attributes and all xl:href attributes which contain a fragment

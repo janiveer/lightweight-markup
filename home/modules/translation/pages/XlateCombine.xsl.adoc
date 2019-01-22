@@ -9,9 +9,7 @@ Translates any XML document into the specified languages.
 
 `Language` (string):: List of ISO language codes, separated by `;`
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with:
 
 . xref:introduction:RDF-Translations.adoc[Translation metadata], showing the location
@@ -25,14 +23,10 @@ specified translations should have the language code `zxx` and should
 point to a file which contains the separator text to display between
 each language.
 
-Output
-------
-
+== Output
 A multi-lingual XML document.
 
-Description
------------
-
+== Description
 The stylesheet reconstructs the structure of the source file. For each
 translatable string, it looks first for the
 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file

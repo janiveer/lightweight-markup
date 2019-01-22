@@ -10,24 +10,18 @@ determiners, adjectives, and relative pronouns, in an XML document.
 
 `Verbose` (Boolean):: Whether full error messages should be displayed.
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with
 xref:introduction:Linguistic-Processing.adoc[linguistic attributes] identifying the
 dependent words in the document and describing the syntactic and / or
 phonetic environment for each dependent word.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that dependent words are
 inflected by phonology, case, gender and number, as required by the
 current language.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element. If
 any element has the attribute ling:type='depend', the stylesheet looks
 for the correct xref:introduction:Linguistic-Processing.adoc#Linguistic-Processing-Dictionary[syntactic
@@ -65,18 +59,14 @@ the empty string, detailed messages are displayed as each dependent word
 is inflected. This can help to work out what’s gone wrong when a word is
 not inflected properly.
 
-Capitalisation
---------------
-
+== Capitalisation
 If the text in this element begins with a capital letter, the stylesheet
 adds a ling:orth='sentence' attribute to the element. You can then pass
 the output document to the xref:linguistic:LingCasing.xsl.adoc[LingCasing.xsl]
 stylesheet to capitalise the first letter of the returned word.
 Otherwise, the word is returned in lower case.
 
-Roadmap
--------
-
+== Roadmap
 In DocBook files, this stylesheet matches wordasword elements as well as
 elements with the ling:type='depend' attribute. This may be removed in a
 future release.

@@ -7,9 +7,7 @@ PACBook provides a custom RelaxNG schema to enable them.
 `docbookxi.rng` schema.
 
 [[PACBook-Schema-Elements]]
-Elements
---------
-
+== Elements
 `pacbook.rng` adds the following elements in the DocBook namespace.
 
 * An optional title element as an initial child of the extendedlink
@@ -23,9 +21,7 @@ attribute is set to resource. This element enables you to define a
 resource in an extended link.
 
 [[PACBook-Schema-Attributes]]
-Attributes
-----------
-
+== Attributes
 `pacbook.rng` adds the following to the DocBook common attributes.
 
 * All ITS 2.0 local attributes in the http://www.w3.org/TR/its20/[ITS]

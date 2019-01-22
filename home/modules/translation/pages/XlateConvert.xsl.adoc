@@ -9,9 +9,7 @@ Translates any XML document into the specified language.
 
 `Language` (string):: ISO language code
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with:
 
 . xref:introduction:RDF-Translations.adoc[Translation metadata], showing the location
@@ -20,14 +18,10 @@ files which contain the translations of the document.
 . The xlf:id attributes which uniquely identify each translation
 string.
 
-Output
-------
-
+== Output
 A translated XML document.
 
-Description
------------
-
+== Description
 The stylesheet reconstructs the structure of the source file. For each
 translatable string, it looks for the
 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html[XLIFF] file

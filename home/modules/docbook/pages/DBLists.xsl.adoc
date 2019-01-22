@@ -8,21 +8,15 @@ or “or” in the appropriate language.
 
 None.
 
-Input
------
-
+== Input
 A DocBook document containing simplelist type='inline' elements.
 
-Output
-------
-
+== Output
 A DocBook document, identical to the input except that any simplelist
 type='inline' elements are replaced with punctuated inline lists with a
 final “and” or “or” in the appropriate language.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element.
 For each simplelist type='inline' element, the members of the list are
 output as a comma separated inline list.
@@ -38,8 +32,8 @@ This stylesheet has similar functionality to the way simplelist
 type='inline' elements are processed by the DocBook XSL stylesheets. The
 differences are:
 
-1.  The final conjunction is specified via the role attribute.
-2.  For languages which require it, the final conjunction is output
+. The final conjunction is specified via the role attribute.
+. For languages which require it, the final conjunction is output
 within a wrapper element with the ling:type='depend' attribute. This
 enables you to use the xref:linguistic:LingDepend.xsl.adoc[LingDepend.xsl] stylesheet
 on the output file to select the correct form of the final conjunction,

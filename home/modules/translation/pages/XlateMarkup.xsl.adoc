@@ -14,20 +14,14 @@ to the input document
 `Carried` (URI):: URI of the output counter file, absolute or relative
 to the input document
 
-Input
------
-
+== Input
 An XML document. DocBook is supported by default; SVG to follow.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that translation strings
 are uniquely identified by auto-generated xlf:id attributes.
 
-Description
------------
-
+== Description
 The stylesheet first looks for the translation unit counter specified by
 the `Counter` parameter. This translation unit counter is an
 automatically-generated XML document containing a single element,
@@ -68,8 +62,8 @@ document to the output document. Any elements which match the specified
 http://www.w3.org/TR/its20/[ITS] rules are marked up with a unique
 xlf:id attribute, as long as:
 
-1.  They are _not_ marked with the its:translate='no' attribute, and:
-2.  They do not have an xlf:id attribute already.
+. They are _not_ marked with the its:translate='no' attribute, and:
+. They do not have an xlf:id attribute already.
 
 Furthermore, any elements which are marked with the its:translate='yes'
 attribute are also marked up with a unique xlf:id attribute, as long as

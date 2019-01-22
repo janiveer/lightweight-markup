@@ -10,22 +10,16 @@ Sets the orthographic case of specified text in an XML document.
 `ShortWords` (string):: English words which should not be capitalised
 in title case.
 
-Input
------
-
+== Input
 An XML document. You must mark up the source document with linguistic
 attributes describing the orthographic case which is required for the
 specified text — see description below.
 
-Output
-------
-
+== Output
 An XML document, identical to the input except that marked text is set
 to the required orthographic case.
 
-Description
------------
-
+== Description
 The stylesheet recurses through the document and copies each element. If
 any element has the ling:orth attribute, the stylesheet changes the case
 of the text nodes in this element and all descendent elements.
@@ -50,31 +44,23 @@ The ling:orth attribute may have any of the following values:
 * sentence
 * title
 
-Upper
-~~~~~
-
+=== Upper
 Changes the case of text nodes to upper case. This is applied to text in
 the current element and all descendent elements, unless any descendent
 elements have a different ling:orth attribute.
 
-Lower
-~~~~~
-
+=== Lower
 Changes the case of text nodes to lower case. This is applied to text in
 the current element and all descendent elements, unless any descendent
 elements have a different ling:orth attribute.
 
-Sentence
-~~~~~~~~
-
+=== Sentence
 Finds the first text node child of the current element and changes the
 first character of the word to upper case. The rest of the text nodes in
 this element and all descendent elements are left unchanged, unless any
 descendent elements have a different ling:orth attribute.
 
-Title
-~~~~~
-
+=== Title
 Splits the text into words (at spaces). If a word is _not_ listed in the
 `ShortWords` parameter, changes the first character of the word to upper
 case. This is applied to text nodes in the current element and all
