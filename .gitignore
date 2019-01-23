@@ -3,3 +3,5 @@
 /netlify/node_modules/
 /node_modules/
 local-antora-playbook.yml
+public/sitemap.xml
+public/home/index.html
