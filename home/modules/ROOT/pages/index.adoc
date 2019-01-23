@@ -1,6 +1,18 @@
 = Overview
 
-PACBook enables you to:
+PACBook is great! It is a *suite* of tools to perform _linguistic pre-processing_ on documentation.
+
+[NOTE]
+--
+PACBook also provides a xref:introduction:PACBook-Schema.adoc[custom schema] to enable
+all of these features in DocBook 5.0.
+
+It’s important to note that PACBook is not a natural language processor.
+The author or translator must mark up text for linguistic processing by
+hand.
+--
+
+It enables you to:
 
 [[Home-Trans]]
 == Transclusion stylesheets
@@ -82,13 +94,3 @@ xref:xliff:XliffTemp.xsl.adoc[XliffTemp.xsl], xref:xliff:XliffTag.xsl.adoc[Xliff
 . Export an XLIFF file to CSV … xref:xliff:Xliff2CSV.xsl.adoc[Xliff2CSV.xsl]
 . Import from Microsoft Excel XML to XLIFF …
 xref:xliff:XL2Xliff.xsl.adoc[XL2Xliff.xsl]
-
-[NOTE]
---
-PACBook also provides a xref:introduction:PACBook-Schema.adoc[custom schema] to enable
-all of these features in DocBook 5.0.
-
-It’s important to note that PACBook is not a natural language processor.
-The author or translator must mark up text for linguistic processing by
-hand.
---
