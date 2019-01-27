@@ -1,5 +1,7 @@
 ﻿# Lightweight Markup Languages
 
+Links from the talk.
+
 [History of markup languages](https://www.writethedocs.org/videos/prague/2018/a-brief-history-of-text-markup-languages-tony-ibbs/)
 
 Some lightweight markup languages:
