@@ -129,7 +129,7 @@ This is less necessary with lightweight markup; I would guess most people just u
 > Demo: 
 > 
 > 1. Create a branch.
-> 2. Edit [modules/ROOT/pages/index.adoc](modules/ROOT/pages/index.adoc).
+> 2. Edit [../home/modules/ROOT/pages/index.adoc](../home/modules/ROOT/pages/index.adoc).
 >
 > Notice it’s easier to read and edit. (More “humane”).
 >
