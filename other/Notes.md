@@ -108,7 +108,7 @@ It's almost impossible to use Docs Like Code with a binary file format, e.g. Wor
 
 > Demo:
 >
-> Diff [DocBook/Fixup_Test.docbook]() and [DocBook/Fixup_Result.docbook]().
+> Diff [DocBook/Fixup_Test.docbook](DocBook/Fixup_Test.docbook) and [DocBook/Fixup_Result.docbook](DocBook/Fixup_Result.docbook).
 
 It’s much easier with lightweight markup languages.
 
@@ -129,7 +129,7 @@ This is less necessary with lightweight markup; I would guess most people just u
 > Demo: 
 > 
 > 1. Create a branch.
-> 2. Edit [modules/ROOT/pages/index.adoc]().
+> 2. Edit [modules/ROOT/pages/index.adoc](modules/ROOT/pages/index.adoc).
 >
 > Notice it’s easier to read and edit. (More “humane”).
 >
