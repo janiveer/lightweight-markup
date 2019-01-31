@@ -68,13 +68,21 @@ So they’ve been around for a while. But recently, lightweight markup languages
 
 * [DocBook versus Markdown](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F0c1gr,%2Fm%2F0jt0gkj)
 
+  ![Screenshot of Google Trends graph, suggesting that since 2004, interest in Docbook has decreased, while interest in Markdown has increased and is now far greater](Trends/docbook-markdown.png)
+
 * [DITA versus Markdown](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F04jv3m,%2Fm%2F0jt0gkj)
 
+  ![Screenshot of Google Trends graph, suggesting that since 2004, interest in DITA has remained steady, but interest in Markdown has increased and is now far greater](Trends/dita-markdown.png)
+
 * [DITA versus AsciiDoc](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F04jv3m,%2Fm%2F0ghs0s)
+
+  ![Screenshot of Google Trends graph, suggesting that since 2004, interest in DITA has decreased slightly, but interest in Markdown has increased and is now slightly greater](Trends/dita-asciidoc.png)
 
 Are they taking some users from dedicated software tools? Maybe...
 
 * [MadCap Flare versus AsciiDoc](https://trends.google.com/trends/explore?date=all&q=Madcap%20Flare,AsciiDoc)
+
+  ![Screenshot of Google Trends graph, suggesting that since 2004, interest in Madcap Flare has remained steady, but interest in AsciiDoc has increased and is now slightly greater](Trends/flare-asciidoc.png)
 
 ## Why?
 
@@ -168,7 +176,7 @@ The Docs Like Code website has a good introduction to some of these. Also ask yo
 > Demo:
 >
 > 1. Use Antora to build this site: `antora local-antora-playbook.yml`
-> 2. Show the output.
+> 2. Show the [output](../public/index.html).
 
 ## Review
 
@@ -177,8 +185,8 @@ One advantage of lightweight markup languages is that they’re supported within
 > Demo:
 >
 > 1. Push the changes to GitHub.
-> 2. Create a pull request.
-> 3. Show GitHub's review features.
+> 2. Create a [pull request](https://github.com/janiveer/lightweight-markup/pull/3).
+> 3. Show GitHub's [review features](https://github.com/janiveer/lightweight-markup/pull/3/files).
 > 4. Ask an attendee to provide feedback and approve the changes.
 > 5. Merge the changes.
 
@@ -197,6 +205,8 @@ Creating a footnote in AsciiDoc? I have to look at the cheat sheet every time.
 
 Finally, you can’t get away from the fact that lightweight markup languages are less capable than XML based markup languages; deliberately so.
 They are designed to be a useful compromise for 99% of use cases.
+
+Questions? Thanks!
 
 ---
 
