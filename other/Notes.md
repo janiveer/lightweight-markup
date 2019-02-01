@@ -176,7 +176,7 @@ The Docs Like Code website has a good introduction to some of these. Also ask yo
 > Demo:
 >
 > 1. Use Antora to build this site: `antora local-antora-playbook.yml`
-> 2. Show the [output](../public/index.html).
+> 2. Show the [output](https://janiveer.github.io/lightweight-markup/).
 
 ## Review
 
