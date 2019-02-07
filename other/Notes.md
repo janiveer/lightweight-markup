@@ -2,7 +2,7 @@
 
 An introductory talk by [Simon Dew](https://github.com/janiveer)
 
-Presented at for [Write the Docs North England](https://www.meetup.com/Write-the-Docs-North/),
+Presented at [Write the Docs North England](https://www.meetup.com/Write-the-Docs-North/),
 January 2019
 
 ---
@@ -163,7 +163,7 @@ for DITA, the [DITA Open Toolkit](http://www.dita-ot.org/).
 Lightweight markup languages are no different. There are many, many tools available for publication, which can be bewildering. These range from simple tools to convert a file into a different format, e.g. PDF, to *static site generators* that create an entire web help site.
 
 * reStructuredText:
-  [Sphynx](http://www.sphinx-doc.org/en/master/index.html)
+  [Sphinx](http://www.sphinx-doc.org/en/master/index.html)
 * Markdown: [Kramdown](https://kramdown.gettalong.org/),
   [PanDoc](https://pandoc.org),
   [Jekyll](https://jekyllrb.com/)
