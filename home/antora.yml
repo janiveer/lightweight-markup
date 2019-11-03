@@ -1,5 +1,5 @@
 name: pacbook
 title: PACBook
-version: release/1.0
+version: '1.0'
 nav:
 - modules/ROOT/nav.adoc
