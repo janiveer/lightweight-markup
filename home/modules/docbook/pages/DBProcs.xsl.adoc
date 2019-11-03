@@ -1,4 +1,5 @@
 = DBProcs.xsl
+:RDF-Applicability: xref:introduction:RDF-Applicability.adoc
 
 [abstract]
 Transforms PAC processing instructions in DocBook documents.
@@ -39,7 +40,7 @@ The attributes of the informaltable, e.g. framing, row separators and
 column separators, are given by the pac.revhistory.table attribute set.
 The attributes of the four columns, e.g. column width, are given by the
 `pac.revhistory.col.version`, `pac.revhistory.col.date`,
-`pac.revhistory.col.author` and pac.revhistory.col.detail attribute
+`pac.revhistory.col.author` and `pac.revhistory.col.detail` attribute
 sets.
 
 === pac-applicability
@@ -55,7 +56,7 @@ The only fully-supported languages at present are German, English,
 French and Dutch.
 
 Each table row is populated by the details given in the document’s
-link:#RDF-Applicability[applicability metadata], if there are any.
+{RDF-Applicability}[applicability metadata], if there are any.
 
 The attributes of the informaltable, e.g. framing, row separators and
 column separators, are given by the pac.applicability.table attribute
