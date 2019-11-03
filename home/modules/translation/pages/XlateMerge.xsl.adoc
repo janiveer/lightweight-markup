@@ -4,7 +4,7 @@
 
 [abstract]
 Checks an XML document against an existing translation and a differential translation in the specified language and generates a new XLIFF file merging the two translations.
-0
+
 == Parameters
 
  (Language | Xliff) Diff
