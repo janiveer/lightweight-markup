@@ -1,96 +1,69 @@
 = Overview
 
-PACBook is great! It is a *suite* of tools to perform _linguistic pre-processing_ on documentation.
+****
+Version {page-version}
+****
 
-[NOTE]
---
-PACBook also provides a xref:introduction:PACBook-Schema.adoc[custom schema] to enable
-all of these features in DocBook 5.0.
-
-It’s important to note that PACBook is not a natural language processor.
-The author or translator must mark up text for linguistic processing by
-hand.
---
-
+PACBook is a suite of tools to perform linguistic pre-processing on documentation.
 It enables you to:
 
 [[Home-Trans]]
 == Transclusion stylesheets
 
-. Perform parametrised transclusion …
-xref:transclusion:TransParam.xsl.adoc[TransParam.xsl]
+. Perform parametrised transclusion … xref:transclusion:TransParam.xsl.adoc[TransParam.xsl]
 . Fix up duplicate IDs … xref:transclusion:TransID.xsl.adoc[TransID.xsl]
-. Fix up links to duplicate IDs or links to non-existent targets …
-xref:transclusion:TransLinks.xsl.adoc[TransLinks.xsl]
+. Fix up links to duplicate IDs or links to non-existent targets … xref:transclusion:TransLinks.xsl.adoc[TransLinks.xsl]
 
 [[Home-Ling]]
 == Linguistic stylesheets
 
-. Select the correct form of transcluded terms, depending on their
-syntactic environment … xref:linguistic:LingHead.xsl.adoc[LingHead.xsl]
-. Inflect text which depends syntactically on any transcluded terms …
-xref:linguistic:LingDepend.xsl.adoc[LingDepend.xsl]
-. Select the correct orthographic case for text, depending on
-environment … xref:linguistic:LingCasing.xsl.adoc[LingCasing.xsl]
+. Select the correct form of transcluded terms, depending on their syntactic environment … xref:linguistic:LingHead.xsl.adoc[LingHead.xsl]
+. Inflect text which depends syntactically on any transcluded terms … xref:linguistic:LingDepend.xsl.adoc[LingDepend.xsl]
+. Select the correct orthographic case for text, depending on environment … xref:linguistic:LingCasing.xsl.adoc[LingCasing.xsl]
 
 [[Home-Text]]
 == Text stylesheets
 
-. Punctuate abbreviations correctly so they don’t have two full stops
-at the end of a sentence … xref:text:TextAbbrev.xsl.adoc[TextAbbrev.xsl]
+. Punctuate abbreviations correctly so they don’t have two full stops at the end of a sentence … xref:text:TextAbbrev.xsl.adoc[TextAbbrev.xsl]
 . Localise number formatting … xref:text:TextNumbers.xsl.adoc[TextNumbers.xsl]
 
 [[Home-DB]]
 == DocBook stylesheets
 
-. Resolve image references against xml:base …
-xref:docbook:DBImage.xsl.adoc[DBImage.xsl]
-. Resolve image references against the XML Catalog …
-xref:docbook:RefResolve.xsl.adoc[RefResolve.xsl]
-. Perform enhanced DocBook conditional profiling …
-xref:docbook:DBProfile.xsl.adoc[DBProfile.xsl]
-. Create automatic titles for DocBook admonitions …
-xref:docbook:DBAdmon.xsl.adoc[DBAdmon.xsl]
-. Perform enhanced formatting of DocBook simple lists — select the
-correct form of conjunctions based on the phonetic environment, for
-languages which demand it … xref:docbook:DBLists.xsl.adoc[DBLists.xsl]
-. Create revision history and applicability tables based on the
-document metadata … xref:docbook:DBProcs.xsl.adoc[DBProcs.xsl]
-. Perform enhanced DocBook glossary processing — include terms in the
-glossary if they are referred to by other terms …
-xref:docbook:DBGloss.xsl.adoc[DBGloss.xsl]
-. Create automatic links between DocBook sections, based on shared
-labels … xref:docbook:DBRels.xsl.adoc[DBRels.xsl]
+. Resolve image references against xml:base … xref:docbook:DBImage.xsl.adoc[DBImage.xsl]
+. Resolve image references against the XML Catalog … xref:docbook:RefResolve.xsl.adoc[RefResolve.xsl]
+. Perform enhanced DocBook conditional profiling … xref:docbook:DBProfile.xsl.adoc[DBProfile.xsl]
+. Create automatic titles for DocBook admonitions … xref:docbook:DBAdmon.xsl.adoc[DBAdmon.xsl]
+. Perform enhanced formatting of DocBook simple lists — select the correct form of conjunctions based on the phonetic environment, for languages which demand it … xref:docbook:DBLists.xsl.adoc[DBLists.xsl]
+. Create revision history and applicability tables based on the document metadata … xref:docbook:DBProcs.xsl.adoc[DBProcs.xsl]
+. Perform enhanced DocBook glossary processing — include terms in the glossary if they are referred to by other terms … xref:docbook:DBGloss.xsl.adoc[DBGloss.xsl]
+. Create automatic links between DocBook sections, based on shared labels … xref:docbook:DBRels.xsl.adoc[DBRels.xsl]
 
 [[Home-Xlate]]
 == Translation stylesheets
 
-. Translate the document using a single XLIFF file …
-xref:translation:XlateConvert.xsl.adoc[XlateConvert.xsl]
-. Create multilingual translations, using several XLIFF files …
-xref:translation:XlateCombine.xsl.adoc[XlateCombine.xsl]
-. Fix up IDs in multilingual translations …
-xref:translation:XlateID.xsl.adoc[XlateID.xsl]
-. Mark up elements in a file for translation …
-xref:translation:XlateMarkup.xsl.adoc[XlateMarkup.xsl]
-. Extract translation elements to an XLIFF file …
-xref:translation:XlateExtract.xsl.adoc[XlateExtract.xsl]
-. Compare document to existing XLIFF file and create diff file …
-xref:translation:XlateDiff.xsl.adoc[XlateDiff.xsl]
-. Merge new translation units into existing XLIFF file …
-xref:translation:XlateMerge.xsl.adoc[XlateMerge.xsl]
+. Translate the document using a single XLIFF file … xref:translation:XlateConvert.xsl.adoc[XlateConvert.xsl]
+. Create multilingual translations, using several XLIFF files … xref:translation:XlateCombine.xsl.adoc[XlateCombine.xsl]
+. Fix up IDs in multilingual translations … xref:translation:XlateID.xsl.adoc[XlateID.xsl]
+. Mark up elements in a file for translation … xref:translation:XlateMarkup.xsl.adoc[XlateMarkup.xsl]
+. Extract translation elements to an XLIFF file … xref:translation:XlateExtract.xsl.adoc[XlateExtract.xsl]
+. Compare document to existing XLIFF file and create diff file … xref:translation:XlateDiff.xsl.adoc[XlateDiff.xsl]
+. Merge new translation units into existing XLIFF file … xref:translation:XlateMerge.xsl.adoc[XlateMerge.xsl]
 
 [[Home-Xliff]]
 == XLIFF management stylesheets
 
-. Remove duplicate translation units from XLIFF file …
-xref:xliff:XliffDupe.xsl.adoc[XliffDupe.xsl]
-. Remove completed translation units from XLIFF file …
-xref:xliff:XliffPurge.xsl.adoc[XliffPurge.xsl]
-. Escape inline markup in an XLIFF file …
-xref:xliff:XliffRaw.xsl.adoc[XliffRaw.xsl]
-. Unescape inline markup in an XLIFF file …
-xref:xliff:XliffTemp.xsl.adoc[XliffTemp.xsl], xref:xliff:XliffTag.xsl.adoc[XliffTag.xsl]
+. Remove duplicate translation units from XLIFF file … xref:xliff:XliffDupe.xsl.adoc[XliffDupe.xsl]
+. Remove completed translation units from XLIFF file … xref:xliff:XliffPurge.xsl.adoc[XliffPurge.xsl]
+. Escape inline markup in an XLIFF file … xref:xliff:XliffRaw.xsl.adoc[XliffRaw.xsl]
+. Unescape inline markup in an XLIFF file … xref:xliff:XliffTemp.xsl.adoc[XliffTemp.xsl], xref:xliff:XliffTag.xsl.adoc[XliffTag.xsl]
 . Export an XLIFF file to CSV … xref:xliff:Xliff2CSV.xsl.adoc[Xliff2CSV.xsl]
-. Import from Microsoft Excel XML to XLIFF …
-xref:xliff:XL2Xliff.xsl.adoc[XL2Xliff.xsl]
+. Import from Microsoft Excel XML to XLIFF … xref:xliff:XL2Xliff.xsl.adoc[XL2Xliff.xsl]
+
+[NOTE]
+--
+PACBook also provides a xref:introduction:PACBook-Schema.adoc[custom schema] to enable all of these features in DocBook 5.0.
+
+It’s important to note that PACBook is not a natural language processor.
+The author or translator must mark up text for linguistic processing by hand.
+--
