@@ -47,4 +47,4 @@
 * xref:xliff:XliffTemp.xsl.adoc[XliffTemp]
 
 .Other Stylesheets
-include::xml-to-json:partial$nav.adoc[]
+include::1.0@xml-to-json:partial$nav.adoc[]
